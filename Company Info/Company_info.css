@@ -1,0 +1,411 @@
+/* =========  common css ================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1320px;
+}
+:root {
+  --font_family: "Roboto", sans-serif, Arial, Helvetica, sans-serif;
+  --font_p_color: #5f6368;
+  --font_h_color:#202124;
+}
+/* ================ */
+
+.header{
+    margin: 80px auto 60px;
+    text-align: center;
+}
+
+.header h2{
+    font-size: 50px;
+  font-weight: 400;
+  font-family: var(--font_family);
+  color: var(--font_h_color);
+}
+
+.header p{
+    font-size: 18px;
+    font-family: var(--font_family);
+    color: var(--font_p_color);
+    margin: 15px 0 20px;
+    padding: 0 225px;
+}
+/* ========= */
+.c_btn button{
+ background: #1a73e8;
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-family: var(--font_family);
+  transition: .4s;
+}
+.c_btn button:hover{
+  background: #024aaaec;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* ================== */
+
+
+/* navbar */
+
+.navbar {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  width: 95%;
+  transform: translateX(-50%);
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.2px);
+  -webkit-backdrop-filter: blur(6.2px);
+  border: 1px solid rgba(255, 255, 255, 0.55);
+}
+.navbar .navbar-brand img {
+  width: 100px;
+}
+.navbar .nav-item .nav-link {
+  padding: 5px 10px;
+  font-size: 18px;
+  font-family: var(--font_family);
+}
+/* ================ */
+
+/* banner_part */
+#banner_part{
+    margin: 120px auto 40px;
+    background: url(https://www.gstatic.com/marketing-cms/assets/images/0b/d4/e6516d32418884386205621ad689/about-companyinfo-hero.jpg=n-w2000-h625-fcrop64=1,0000051ffffffae1-rw) no-repeat center / cover;
+    height: 325px;
+}
+
+#banner_title .container{
+    margin: 5px auto 100px;
+    text-align: center;
+    padding: 10px 50px;
+}
+#banner_title .container h1{
+    font-size: 60px;
+    font-weight: 400;
+    font-family: var(--font_family);
+    color: var(--font_h_color);
+}
+#banner_title .container h1 .organize{
+    color: #4285f4;
+}
+#banner_title .container h1 .information{
+    color: #ea4335;
+}
+#banner_title .container h1 .universally{
+    color: #34a853;
+}
+#banner_title .container h1 .useful{
+    color: #e37400;
+}
+/* ========================0 */
+
+#careers_card_part {
+    margin: 0 auto 50px ;
+    background: #e7e7e7;
+    padding: 50px 0;
+}
+#careers_card_part .container{
+    display: flex;
+}
+#careers_card_part .container .c_card{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #bbbbbb;
+    border-radius: 8px;
+    background: #ffffff;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     width: 375px;
+     margin-left: auto;
+    margin-right: auto;
+     
+}
+#careers_card_part .container .c_card .text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#careers_card_part .container .c_card .text p{
+    font-size: 18px;
+  font-family: var(--font_family);
+  color: var(--font_p_color);
+}
+#careers_card_part .container .c_card .text .fa-solid{
+    font-size: 20px;
+  color: #1a73e8;
+}
+#careers_card_part .container .c_card .image img{
+    width: 100%;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+/* ====================== */
+
+#technology_part{
+  margin-bottom: 70px;
+}
+#technology_part .main .top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+#technology_part .main img{
+  width: 100%;
+  border-top-left-radius: 20px ;
+  border-top-right-radius: 20px;
+}
+
+#technology_part .main  .c_card{
+  border-radius: 20px;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#technology_part .main  .c_card .text{
+  padding: 40px;
+}
+#technology_part .main  .c_card .text p{
+  font-size: 20px;
+  font-family: var(--font_family);
+  color: var(--font_p_color);
+  margin-bottom: 20px;
+}
+#technology_part .main  .c_card .text .fa-solid{
+  display: flex;
+  justify-content: end;
+  font-size: 20px;
+  color: #1a73e8;
+}
+
+#technology_part .main .bottom{
+    display: flex;
+    justify-content: space-between;
+}
+/* =========== */
+#ceo_part {
+  margin: 10px 0 30px;
+  background: #e7e7e7;
+  padding: 50px 0;
+}
+#ceo_part .main{
+  display: flex;
+  justify-content: space-evenly;
+
+  align-items: center;
+}
+#ceo_part .main .text{
+  width: 50%;
+}
+
+#ceo_part .main img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+#ceo_part .main   p{
+  font-size: 18px;
+  font-family: var(--font_family);
+  color: var(--font_p_color);
+  margin: 20px 0 15px;
+}
+
+/* ========== */
+
+/* our_work_part */
+#our_work_part {
+  margin: 50px 0;
+}
+
+#our_work_part .main{
+  display: flex;
+  justify-content: space-between;
+}
+#our_work_part .main .c_card{
+  /* height: 100%; */
+  text-align: center;
+  padding: 36px 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 8px;
+}
+#our_work_part .main .c_card_text img,
+#our_work_part .main .c_card img{
+  display: inline;
+  border-radius: 8px;
+}
+#our_work_part .main .c_card_text h4,
+#our_work_part .main .c_card h4{
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--font_family);
+  color: var(--font_h_color);
+  margin: 20px 10px;
+}
+#our_work_part .main .c_card_text p,
+#our_work_part .main .c_card p{
+ font-size: 18px;
+  font-family: var(--font_family);
+  color: var(--font_p_color);
+  margin: 20px 0 15px;
+}
+#our_work_part .main .c_card_text .icon .fa-solid,
+#our_work_part .main .c_card .icon .fa-solid{
+  font-size: 20px;
+  color: #1a73e8;
+}
+
+#our_work_part .main .c_card_text{
+  text-align: center;
+  padding: 36px 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/* ======================= */
+
+
+
+
+
+/* 
+#google_search .main .right h2{
+  font-size: 40px;
+  font-weight: 400;
+  font-family: var(--font_family);
+  color: var(--font_h_color);
+}
+#google_search .main .right  p{
+  font-size: 18px;
+  font-family: var(--font_family);
+  color: var(--font_p_color);
+  margin: 20px 0 15px;
+}
+#google_search .main .c_btn button{
+ background: #1a73e8;
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 30px;
+  border: none;
+  font-size: 18px;
+  font-family: var(--font_family);
+  transition: .4s;
+}
+#google_search .main .c_btn button:hover{
+  background: #024aaaec;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} */
+
+/* ****************************** */
+/* footer start */
+
+#footer_part{
+  background: #e7e7e7;
+}
+
+#footer_part .about{
+  padding: 40px 0 20px;
+  border-bottom: 1px solid rgba(114, 114, 114, 0.614);
+}
+#footer_part .about ul p{
+  font-size: 19px;
+  color: var(--font_h_color);
+  width: 800;
+  font-family: var(--font_family);
+}
+#footer_part .about ul li{
+   margin: 10px 0;
+}
+#footer_part .about ul li a{
+  font-size: 17px;
+  color: var(--font_p_color);
+  width: 800;
+  font-family: var(--font_family);
+  transition: .4s;
+}
+#footer_part .about ul li a:hover{
+  color: var(--font_h_color);
+}
+/* == */
+
+#footer_part .c_footer{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 30px 0 40px;
+}
+
+#footer_part .c_footer .left a{
+  font-size: 17px;
+  color: var(--font_p_color);
+  width: 800;
+  font-family: var(--font_family);
+  transition: .4s;
+  margin-left: 25px;
+}
+#footer_part .c_footer .left a:hover{
+  color: var(--font_h_color);
+}
+#footer_part .c_footer .left img{
+  margin-right: 50px;
+  width: 100px;
+}
+
+#footer_part .c_footer .right select {
+    padding: 3px 10px;
+    font-size: 16px;
+    border: none;
+  }
+
+#footer_part .c_footer .right select:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+  
+#footer_part .c_footer .right select option {
+  font-size: 17px;
+  color: var(--font_p_color);
+  width: 800;
+  font-family: var(--font_family);
+  }
+
+  #footer_part .c_footer .right div a{
+  font-size: 17px;
+  color: var(--font_p_color);
+  width: 800;
+  font-family: var(--font_family);
+  transition: .4s;
+}
+#footer_part .c_footer .right div a:hover{
+  color: var(--font_h_color);
+}
+/* Footer end */
